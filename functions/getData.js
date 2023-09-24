@@ -11,7 +11,9 @@ function getData (key, dob, keyA, keyB, keyC) {
         month = false;
         monthString = false;
         day = false;
-    } else if (dob.length == 10){
+
+        // Check if the DOB is formated correctly if not throw error
+    } else if (dob.length == 10 && dob.substr(4,1) == "/" && dob.substr(7, 1) == "/"){
         year = dob.substr(0,4); // extract the year
         month = dob.substr(5,2); // extract the month
         day = dob.substr(8,2); // extract the day
@@ -66,7 +68,7 @@ function getData (key, dob, keyA, keyB, keyC) {
         keyA = false;
     }
     if( keyB == ""){
-        keyb = false;
+        keyB = false;
     }
     if( keyC == ""){
         keyC = false;

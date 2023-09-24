@@ -2,7 +2,6 @@ const prompt = require('prompt-sync')({sigint: true});
 
 // Get functions
 const getData = require('./functions/getData.js');
-const extractDOB = require("./functions/extractDOB.js")
 
 // declare variables 
 let $KEY = "";
