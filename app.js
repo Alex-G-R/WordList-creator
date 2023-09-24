@@ -58,3 +58,8 @@ if( $KEYc === "" ){
 }
 
 // sumarize the data
+console.log(`Main KEY: ${$KEY}`);
+console.log(`DOB (date of birth YYYY/MM/DD): ${$DOB}`);
+console.log(`Additional KEY 1: ${$KEYa}`);
+console.log(`Additional KEY 2: ${$KEYb}`);
+console.log(`Additional KEY 3: ${$KEYc}`);
