@@ -79,8 +79,8 @@ let $DAY;
 
 function extractDOB(DOB){
     $YEAR = DOB.substr(0,4); // extract the year
-    $MONTH = DOB.substr(4,2); // extract the month
-    $DAY = DOB.substr(7,2); // extract the day
+    $MONTH = DOB.substr(5,2); // extract the month
+    $DAY = DOB.substr(8,2); // extract the day
 
     console.log(`year: ${$YEAR}, month: ${$MONTH}, day: ${$DAY}`)
 }
