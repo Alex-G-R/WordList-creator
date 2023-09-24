@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Alex-G-R/WordList-creator/issues"
   },
-  "homepage": "https://github.com/Alex-G-R/WordList-creator#readme"
+  "homepage": "https://github.com/Alex-G-R/WordList-creator#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
