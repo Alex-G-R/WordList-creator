@@ -7,6 +7,12 @@ let $KEYc = "";
 let $KEYb = "";
 let $KEYa = "";
 
+// Create arrays
+const numbersArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+const specialCharsArray = ["!", "@", "#", "$", "&", "*", "_", "-"];
+const popularPhrasesArray = ["123", "One", "passowrd", "321", "000", "69", "420", "666", "777", "key"];
+
+
 // Declare functions to get the data
 // key word 
 function getTheMainKey(){
@@ -63,3 +69,5 @@ console.log(`DOB (date of birth YYYY/MM/DD): ${$DOB}`);
 console.log(`Additional KEY 1: ${$KEYa}`);
 console.log(`Additional KEY 2: ${$KEYb}`);
 console.log(`Additional KEY 3: ${$KEYc}`);
+
+// Create word list
