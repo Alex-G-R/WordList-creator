@@ -1,6 +1,7 @@
 const prompt = require('prompt-sync')({sigint: true});
 
 // Get functions
+const firstGeneration = require('./functions/firstGen.js');
 const getData = require('./functions/getData.js');
 
 // declare variables 
@@ -49,5 +50,7 @@ getTheAdditionalKeyC();
 const $DATA = getData($KEY, $DOB, $KEYa, $KEYb, $KEYc);
 console.log($DATA)
 
+// Generate passwords
 
-
+// first generation MainKeyWord + 0-9999
+firstGeneration($DATA);

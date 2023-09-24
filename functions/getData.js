@@ -75,15 +75,15 @@ function getData (key, dob, keyA, keyB, keyC) {
     }
 
     const $DATA = {
-        "keyWord": key,
-        "keyA": keyA,
-        "keyB": keyB,
-        "keyC": keyC,
-        "dob": dob,
-        "year": year,
-        "month": month,
-        "monthString": monthString,
-        "day": day,
+        keyWord: key,
+        keyA: keyA,
+        keyB: keyB,
+        keyC: keyC,
+        dob: dob,
+        year: year,
+        month: month,
+        monthString: monthString,
+        day: day,
     }
 
     return $DATA
