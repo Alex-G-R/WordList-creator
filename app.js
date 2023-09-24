@@ -56,10 +56,26 @@ console.log($DATA)
 
 // first generation MainKeyWord + 0-9999
 firstGeneration($DATA);
+
 // second generation = firstGeneration + specialChars
 secondGeneration($DATA, specialCharsArray)
+
 // third generation = MainKeyWord + AdditionalKeyWord a/b/c  
 // MainKeyWord + AdditionalKey a/b/c + 0-9999
 // MainKeyWord + AdditionalKey a/b/c + special characters
-// MainKeyWord + AdditionalKey a/b/c + 0-9999 + special characters - do it AFTER TEST YIU STUDPID SANDWITCH
+// MainKeyWord + AdditionalKey a/b/c + 0-9999 + special characters
 thirdGeneration($DATA, specialCharsArray)
+
+// fourth generation
+// MKW + year-month-day
+// MKW + year-month
+// MKW + year
+// MKW + month-day
+// MKW + month
+// MKW + day
+// MKW + year-day
+// MKW + day-month
+// MKW + day-year
+// MKW + day+month+year
+// MKW + month-day-year
+// MKW year-day-month
