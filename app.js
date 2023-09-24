@@ -1,6 +1,10 @@
 const prompt = require('prompt-sync')({sigint: true});
 
-//declare constants
+// Get functions
+const getData = require('./functions/getData.js');
+const extractDOB = require("./functions/extractDOB.js")
+
+// declare variables 
 let $KEY = "";
 let $DOB = "";
 let $KEYc = "";
@@ -42,49 +46,12 @@ getTheAdditionalKeyA();
 getTheAdditionalKeyB();
 getTheAdditionalKeyC();
 
-// Check if blank
-while( $KEY === "" ){
-    getTheMainKey();
-}
+// check get and print the $DATA
+const $DATA = getData($KEY, $DOB, $KEYa, $KEYb, $KEYc);
+console.log($DATA)
 
-if( $DOB == "" ){
-    $DOB = false;
-}
-
-if( $KEYa === "" ){
-    $KEYa = false;
-}
-
-if( $KEYb === "" ){
-    $KEYb = false;
-}
-
-if( $KEYc === "" ){
-    $KEYc = false;
-}
-
-
-
-// sumarize the data
-console.log(`Main KEY: ${$KEY}`);
-console.log(`DOB (date of birth YYYY/MM/DD): ${$DOB}`);
-console.log(`Additional KE 1: ${$KEYa}`);
-console.log(`Additional KEY 2: ${$KEYb}`);
-console.log(`Additional KEY 3: ${$KEYc}`);
 
 // Extract the data from the dob
-let $YEAR;
-let $MONTH;
-let $DAY;
-
-function extractDOB(DOB){
-    $YEAR = DOB.substr(0,4); // extract the year
-    $MONTH = DOB.substr(5,2); // extract the month
-    $DAY = DOB.substr(8,2); // extract the day
-
-    console.log(`year: ${$YEAR}, month: ${$MONTH}, day: ${$DAY}`)
-}
-
-extractDOB($DOB)
+console.log(extractDOB($DOB));
 
 
