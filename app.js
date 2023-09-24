@@ -68,8 +68,23 @@ if( $KEYc === "" ){
 // sumarize the data
 console.log(`Main KEY: ${$KEY}`);
 console.log(`DOB (date of birth YYYY/MM/DD): ${$DOB}`);
-console.log(`Additional KEY 1: ${$KEYa}`);
+console.log(`Additional KE 1: ${$KEYa}`);
 console.log(`Additional KEY 2: ${$KEYb}`);
 console.log(`Additional KEY 3: ${$KEYc}`);
 
 // Extract the data from the dob
+let $YEAR;
+let $MONTH;
+let $DAY;
+
+function extractDOB(DOB){
+    $YEAR = DOB.substr(0,4); // extract the year
+    $MONTH = DOB.substr(4,2); // extract the month
+    $DAY = DOB.substr(7,2); // extract the day
+
+    console.log(`year: ${$YEAR}, month: ${$MONTH}, day: ${$DAY}`)
+}
+
+extractDOB($DOB)
+
+
