@@ -4,6 +4,7 @@ const prompt = require('prompt-sync')({sigint: true});
 const firstGeneration = require('./functions/firstGen.js');
 const getData = require('./functions/getData.js');
 const secondGeneration = require('./functions/secondGen.js');
+const thirdGeneration = require('./functions/thirdGeneration.js');
 
 // declare variables 
 let $KEY = "";
@@ -57,4 +58,8 @@ console.log($DATA)
 firstGeneration($DATA);
 // second generation = firstGeneration + specialChars
 secondGeneration($DATA, specialCharsArray)
-// third generation = MainKeyWord + AdditionalKeyWord a/b/c
+// third generation = MainKeyWord + AdditionalKeyWord a/b/c  
+// MainKeyWord + AdditionalKey a/b/c + 0-9999
+// MainKeyWord + AdditionalKey a/b/c + special characters
+// MainKeyWord + AdditionalKey a/b/c + 0-9999 + special characters - do it AFTER TEST YIU STUDPID SANDWITCH
+thirdGeneration($DATA, specialCharsArray)
