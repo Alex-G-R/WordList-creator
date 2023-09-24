@@ -51,7 +51,4 @@ const $DATA = getData($KEY, $DOB, $KEYa, $KEYb, $KEYc);
 console.log($DATA)
 
 
-// Extract the data from the dob
-console.log(extractDOB($DOB));
-
 
