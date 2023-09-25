@@ -10,6 +10,7 @@ const getData = require('./functions/getData.js');
 const secondGeneration = require('./functions/secondGen.js');
 const thirdGeneration = require('./functions/thirdGeneration.js');
 const eighthGeneration = require('./functions/eighthGeneration.js');
+const ninethGeneration = require('./functions/ninethGeneration.js');
 
 // declare variables 
 let $KEY = "";
@@ -97,3 +98,7 @@ seventhGeneration($DATA)
 
 // eighth generation = MKW + popular phrazes / MKW + popularPhrazes + specialchars
 eighthGeneration($DATA, popularPhrasesArray, specialCharsArray)
+
+// nineth generation = MKW + additionalKey A/B/C + specialChars
+ninethGeneration($DATA, specialCharsArray)
+
