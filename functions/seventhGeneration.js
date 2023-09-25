@@ -5,194 +5,164 @@ function seventhGeneration (data){
     // MKW + AK(A/B/C) + year month day
     
         if( data.dob != false){
-
-            const password = data.keyWord + data.keyA + data.year + data.month + data.day;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
+            if( data.keyA != false ){
+                const password = data.keyWord + data.keyA + data.year + data.month + data.day;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
+            if( data.keyB != false ){
+                const password = data.keyWord + data.keyB + data.year + data.month + data.day;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
+            if( data.keyC != false ){
+                const password = data.keyWord + data.keyC + data.year + data.month + data.day;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
         }
-        if( data.dob != false){
-
-            const password = data.keyWord + data.keyB + data.year + data.month + data.day;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
-        if( data.dob != false){
-
-            const password = data.keyWord + data.keyC + data.year + data.month + data.day;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
+        
     
 
     // MKW + AK(A/B/C) + year month
         if( data.dob != false){
-
-            const password = data.keyWord + data.keyA + data.year + data.month;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
-        if( data.dob != false){
-
-            const password = data.keyWord + data.keyB + data.year + data.month;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
-        if( data.dob != false){
-
-            const password = data.keyWord + data.keyC + data.year + data.month;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
+            if( data.keyA != false ){
+                const password = data.keyWord + data.keyA + data.year + data.month;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
+            if( data.keyB != false ){
+                const password = data.keyWord + data.keyB + data.year + data.month;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
+            if( data.keyC != false ){
+                const password = data.keyWord + data.keyC + data.year + data.month;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
         }
     
 
     // MKW + AK(A/B/C) + year
         if( data.dob != false){
-
-            const password = data.keyWord + data.keyA + data.year;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
-        if( data.dob != false){
-
-            const password = data.keyWord + data.keyB + data.year;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
-        if( data.dob != false){
-
-            const password = data.keyWord + data.keyC + data.year;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
+            if( data.keyA != false ){
+                const password = data.keyWord + data.keyA + data.year;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }  
+            if( data.keyB != false ){
+                const password = data.keyWord + data.keyB + data.year;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }  
+            if( data.keyC != false ){
+                const password = data.keyWord + data.keyC + data.year;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }  
         }
     
 
     // MKW + AK(A/B/C) + month day
         if( data.dob != false){
-
-            const password = data.keyWord + data.keyA + data.month + data.day;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
-        if( data.dob != false){
-
-            const password = data.keyWord + data.keyB + data.month + data.day;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
-        if( data.dob != false){
-
-            const password = data.keyWord + data.keyC + data.month + data.day;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
+            if( data.keyA != false){
+                const password = data.keyWord + data.keyA + data.month + data.day;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
+            if( data.keyB != false){
+                const password = data.keyWord + data.keyB + data.month + data.day;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
+            if( data.keyC != false){
+                const password = data.keyWord + data.keyC + data.month + data.day;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
         }
     
 
     // MKW + AK(A/B/C) + month
         if( data.dob != false){
-
-            const password = data.keyWord + data.keyA + data.month;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
-        if( data.dob != false){
-
-            const password = data.keyWord + data.keyB + data.month;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
-        if( data.dob != false){
-
-            const password = data.keyWord + data.keyC + data.month;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
+            if( data.keyA != false){
+                const password = data.keyWord + data.keyA + data.month;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
+            if( data.keyB != false){
+                const password = data.keyWord + data.keyB + data.month;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
+            if( data.keyC != false){
+                const password = data.keyWord + data.keyC + data.month;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
         }
     
 
     // MKW + AK(A/B/C) + day
         if( data.dob != false){
-
-            const password = data.keyWord + data.keyA + data.day;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
-        if( data.dob != false){
-
-            const password = data.keyWord + data.keyB + data.day;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
-        if( data.dob != false){
-
-            const password = data.keyWord + data.keyC + data.day;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
+            if( data.keyA != false ){
+                const password = data.keyWord + data.keyA + data.day;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
+            if( data.keyB != false ){
+                const password = data.keyWord + data.keyB + data.day;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
+            if( data.keyC != false ){
+                const password = data.keyWord + data.keyC + data.day;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
         }
     
 
 
     // MKW + Ak(A/B/C) + year day
         if( data.dob != false){
-
-            const password = data.keyWord + data.keyA + data.year + data.day;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
+            if( data.keyA != false ){
+                const password = data.keyWord + data.keyA + data.year + data.day;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
+            if( data.keyB != false ){
+                const password = data.keyWord + data.keyB + data.year + data.day;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
+            if( data.keyC != false ){
+                const password = data.keyWord + data.keyC + data.year + data.day;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
         }
-        if( data.dob != false){
-
-            const password = data.keyWord + data.keyB + data.year + data.day;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
-        if( data.dob != false){
-
-            const password = data.keyWord + data.keyC + data.year + data.day;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
+        
 
     // MKW + AK(a/b/c) + day month
         if( data.dob != false){
-
-            const password = data.keyWord + data.keyA + data.day + data.month;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
-        if( data.dob != false){
-
-            const password = data.keyWord + data.keyB + data.day + data.month;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
-        if( data.dob != false){
-
-            const password = data.keyWord + data.keyC + data.day + data.month;
-            console.log(password);
-            fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
-
-        }
+            if( data.keyA != false ){
+                const password = data.keyWord + data.keyA + data.day + data.month;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
+            if( data.keyB != false ){
+                const password = data.keyWord + data.keyB + data.day + data.month;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
+            if( data.keyC != false ){
+                const password = data.keyWord + data.keyC + data.day + data.month;
+                console.log(password);
+                fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"})
+            }
+        } // ENDED HERE AUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
     
 
     // MKW + AK(a/b/c) + day year
