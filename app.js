@@ -1,5 +1,6 @@
 const prompt = require('prompt-sync')({sigint: true});
 
+const fifthGeneration = require('./functions/fifthGeneration.js');
 // Get functions
 const firstGeneration = require('./functions/firstGen.js');
 const fourthGeneration = require('./functions/fourthGeneration.js');
@@ -83,3 +84,4 @@ thirdGeneration($DATA, specialCharsArray)
 fourthGeneration($DATA);
 
 // fifth generation = fourthGeneration + special characters
+fifthGeneration($DATA, specialCharsArray)
