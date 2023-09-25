@@ -93,3 +93,5 @@ sixthGeneration($DATA, specialCharsArray);
 
 // seventh generation = MKW + AdditionalWord A/B/C + fourth generation
 seventhGeneration($DATA)
+
+// eighth generation = 
