@@ -56,7 +56,7 @@ function fourthGeneration (data){
     if( data.dob != false){
         const password = data.keyWord + data.day + data.month;
         console.log(password);
-        fs.writeFileSync(`./wordLists/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"}) 
+        fs.writeFileSync(`./wordList1s/${data.keyWord}`+"List"+`.txt`, password + "\n", {flag: "a"}) 
     }
 
     // MKW + day year

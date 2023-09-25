@@ -1,5 +1,5 @@
 
-function fifthGeneration (data, specialChars){
+function sixthGeneration (data, specialChars){
     const fs = require('fs');
 
     // MKW + AK(A/B/C) + year month day
@@ -305,4 +305,4 @@ function fifthGeneration (data, specialChars){
     
 }
 
-module.exports = fifthGeneration;
+module.exports = sixthGeneration;
