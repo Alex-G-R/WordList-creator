@@ -21,7 +21,7 @@ let $KEYa = "";
 // Create arrays
 const numbersArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 const specialCharsArray = ["!", "@", "#", "$", "&", "*", "_", "-"];
-const popularPhrasesArray = ["123", "One", "passowrd", "321", "000", "69", "420", "666", "777", "key", "007", "1337"];
+const popularPhrasesArray = ["123", "One", "passowrd", "321", "000", "69", "420", "666", "777", "key", "007", "1337", "Password", "one", "I"];
 
 
 // Declare functions to get the data
