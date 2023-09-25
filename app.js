@@ -2,6 +2,7 @@ const prompt = require('prompt-sync')({sigint: true});
 
 // Get functions
 const firstGeneration = require('./functions/firstGen.js');
+const fourthGeneration = require('./functions/fourthGeneration.js');
 const getData = require('./functions/getData.js');
 const secondGeneration = require('./functions/secondGen.js');
 const thirdGeneration = require('./functions/thirdGeneration.js');
@@ -67,15 +68,18 @@ secondGeneration($DATA, specialCharsArray)
 thirdGeneration($DATA, specialCharsArray)
 
 // fourth generation
-// MKW + year-month-day
-// MKW + year-month
-// MKW + year
-// MKW + month-day
-// MKW + month
-// MKW + day
-// MKW + year-day
-// MKW + day-month
-// MKW + day-year
-// MKW + day+month+year
-// MKW + month-day-year
-// MKW year-day-month
+// MKW + year-month-day --
+// MKW + year-month --
+// MKW + year --
+// MKW + month-day --
+// MKW + month --
+// MKW + day --
+// MKW + year-day --
+// MKW + day-month --
+// MKW + day-year --
+// MKW + day+month+year --
+// MKW + month-day-year --
+// MKW year-day-month --
+fourthGeneration($DATA);
+
+// fifth generation = fourthGeneration + special characters
