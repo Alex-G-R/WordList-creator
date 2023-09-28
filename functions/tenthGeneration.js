@@ -10,11 +10,6 @@ const thirdGeneration = require("./thirdGeneration");
 
 function tenthGeneration(data, specialChars, popularPhrazes){
 
-    data.keyWord = data.keyWord.toLowerCase();
-    data.keyA = data.keyA.toLowerCase();
-    data.keyB = data.keyB.toLowerCase();
-    data.keyC = data.keyC.toLowerCase();
-
     const $data = {
         keyWord: data.keyWord.toLowerCase(),
         keyA: data.keyA.toLowerCase(),
