@@ -1,14 +1,16 @@
-const eighthGeneration = require("./eighthGeneration");
-const fifthGeneration = require("./fifthGeneration");
-const firstGeneration = require("./firstGen");
-const fourthGeneration = require("./fourthGeneration");
-const ninethGeneration = require("./ninethGeneration");
-const secondGeneration = require("./secondGen");
-const seventhGeneration = require("./seventhGeneration");
-const sixthGeneration = require("./sixthGeneration");
-const thirdGeneration = require("./thirdGeneration");
+
 
 function tenthGeneration(data, specialChars, popularPhrazes){
+
+    const eighthGeneration = require("./eighthGeneration");
+    const fifthGeneration = require("./fifthGeneration");
+    const firstGeneration = require("./firstGen");
+    const fourthGeneration = require("./fourthGeneration");
+    const ninethGeneration = require("./ninethGeneration");
+    const secondGeneration = require("./secondGen");
+    const seventhGeneration = require("./seventhGeneration");
+    const sixthGeneration = require("./sixthGeneration");
+    const thirdGeneration = require("./thirdGeneration");
 
     // not working
 
