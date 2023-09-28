@@ -10,14 +10,20 @@ const thirdGeneration = require("./thirdGeneration");
 
 function tenthGeneration(data, specialChars, popularPhrazes){
 
+    // not working
+
     // main key word
-    let MKW = data.keyWord.toLowerCase();
+    let temp = data.keyWord;
+    let MKW = temp.toLowerCase();
     // key a
-    let KA = data.keyA.toLowerCase();
+    temp = data.A;
+    let KA = temp.toLowerCase();
     // key b
-    let KB = data.keyB.toLowerCase();
+    temp = data.keyB;
+    let KB = temp.toLowerCase();
     // key C
-    let KC = data.keyC.toLowerCase();
+    temp = data.keyC;
+    let KC = temp.toLowerCase();
 
     let datadob = data.dob;
     let datayear = data.year;
