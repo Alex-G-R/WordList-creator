@@ -17,9 +17,12 @@ function tenthGeneration(data, specialChars, popularPhrazes){
     const keysToLowerCase = (data) => {
         const lowercaseData = {};
 
-        for (const key in data) {
-            if (data.hasOwnProperty(key)) {
-                lowercaseData[key.toLowerCase()] = data[key].toLowerCase();
+        for( let key in data ){
+            if( data.hasOwnProperty(key)) {
+                let temp = key.toString();
+                let property = temp.toLowerCase();
+                // figure it out later bro
+                lowercaseData.
             }
         }
 
@@ -29,7 +32,7 @@ function tenthGeneration(data, specialChars, popularPhrazes){
     const $data = keysToLowerCase(data);
 
 
-    /*
+    // call the functions
     firstGeneration($data);
     secondGeneration($data, specialChars);
     thirdGeneration($data, specialChars);
@@ -39,7 +42,7 @@ function tenthGeneration(data, specialChars, popularPhrazes){
     seventhGeneration($data);
     eighthGeneration($data, popularPhrazes, specialChars);
     ninethGeneration($data, specialChars);
-    */
+    
 
 }
-module.exports = tenthGeneration();
+module.exports = tenthGeneration;

@@ -105,7 +105,8 @@ ninethGeneration($DATA, specialCharsArray)
 
 
 // TenthGeneration = 1-9 gen = change to all Small leters
-tenthGeneration($DATA, specialCharsArray, popularPhrasesArray)
+
+//tenthGeneration($DATA, specialCharsArray, popularPhrasesArray)
 
 // EleventhGeneration = 1-9 gen = change all letters to BIG
 
