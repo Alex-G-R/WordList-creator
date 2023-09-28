@@ -1,5 +1,4 @@
 
-
 function tenthGeneration(data, specialChars, popularPhrazes){
 
     const eighthGeneration = require("./eighthGeneration");
@@ -12,39 +11,25 @@ function tenthGeneration(data, specialChars, popularPhrazes){
     const sixthGeneration = require("./sixthGeneration");
     const thirdGeneration = require("./thirdGeneration");
 
-    // not working
 
-    // main key word
-    let temp = data.keyWord;
-    let MKW = temp.toLowerCase();
-    // key a
-    temp = data.A;
-    let KA = temp.toLowerCase();
-    // key b
-    temp = data.keyB;
-    let KB = temp.toLowerCase();
-    // key C
-    temp = data.keyC;
-    let KC = temp.toLowerCase();
 
-    let datadob = data.dob;
-    let datayear = data.year;
-    let datamonth = data.month;
-    let datamonthString = data.monthString;
-    let dataday = data.day;
+    // Extract keys from the 'data' object and convert them to lowercase
+    const keysToLowerCase = (data) => {
+        const lowercaseData = {};
 
-    const $data = {
-        keyWord: MKW,
-        keyA: KA,
-        keyB: KB,
-        keyC: KC,
-        dob: datadob,
-        year: datayear,
-        month: datamonth,
-        monthString: datamonthString,
-        day: dataday,
-    }
+        for (const key in data) {
+            if (data.hasOwnProperty(key)) {
+                lowercaseData[key.toLowerCase()] = data[key].toLowerCase();
+            }
+        }
 
+        return lowercaseData;
+    };
+
+    const $data = keysToLowerCase(data);
+
+
+    /*
     firstGeneration($data);
     secondGeneration($data, specialChars);
     thirdGeneration($data, specialChars);
@@ -54,6 +39,7 @@ function tenthGeneration(data, specialChars, popularPhrazes){
     seventhGeneration($data);
     eighthGeneration($data, popularPhrazes, specialChars);
     ninethGeneration($data, specialChars);
+    */
 
 }
 module.exports = tenthGeneration();
