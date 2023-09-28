@@ -10,19 +10,32 @@ const thirdGeneration = require("./thirdGeneration");
 
 function tenthGeneration(data, specialChars, popularPhrazes){
 
-    const $data = {
-        keyWord: data.keyWord.toLowerCase(),
-        keyA: data.keyA.toLowerCase(),
-        keyB: data.keyB.toLowerCase(),
-        keyC: data.keyC.toLowerCase(),
-        dob: data.dob,
-        year: data.year,
-        month: data.month,
-        monthString: data.monthString,
-        day: data.day,
-    }
+    // main key word
+    let MKW = data.keyWord.toLowerCase();
+    // key a
+    let KA = data.keyA.toLowerCase();
+    // key b
+    let KB = data.keyB.toLowerCase();
+    // key C
+    let KC = data.keyC.toLowerCase();
 
-    console.log(data.keyA)
+    let datadob = data.dob;
+    let datayear = data.year;
+    let datamonth = data.month;
+    let datamonthString = data.monthString;
+    let dataday = data.day;
+
+    const $data = {
+        keyWord: MKW,
+        keyA: KA,
+        keyB: KB,
+        keyC: KC,
+        dob: datadob,
+        year: datayear,
+        month: datamonth,
+        monthString: datamonthString,
+        day: dataday,
+    }
 
     firstGeneration($data);
     secondGeneration($data, specialChars);
