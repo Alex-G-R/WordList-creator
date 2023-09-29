@@ -1,5 +1,5 @@
 
-function twelwthGeneration(data, specialChars, popularPhrazes){
+function threeteenthGeneration(data, specialChars, popularPhrazes){
 
     const eighthGeneration = require("./eighthGeneration");
     const fifthGeneration = require("./fifthGeneration");
@@ -53,4 +53,4 @@ function twelwthGeneration(data, specialChars, popularPhrazes){
     
 
 }
-module.exports = twelwthGeneration;
+module.exports = threeteenthGeneration;

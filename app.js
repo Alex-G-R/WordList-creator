@@ -12,6 +12,9 @@ const thirdGeneration = require('./functions/thirdGeneration.js');
 const eighthGeneration = require('./functions/eighthGeneration.js');
 const ninethGeneration = require('./functions/ninethGeneration.js');
 const tenthGeneration = require('./functions/tenthGeneration.js');
+const eleventhGeneration = require('./functions/eleventhGeneration.js');
+const twelwthGeneration = require('./functions/twelwthGeneration.js');
+const threeteenthGeneration = require('./functions/threeteenthGeneration.js');
 
 // declare variables 
 let $KEY = "";
@@ -105,13 +108,13 @@ ninethGeneration($DATA, specialCharsArray)
 
 
 // TenthGeneration = 1-9 gen = change to all Small leters
-
 tenthGeneration($DATA, specialCharsArray, popularPhrasesArray)
 
 // EleventhGeneration = 1-9 gen = change all letters to BIG
+eleventhGeneration($DATA, specialCharsArray, popularPhrasesArray)
 
-// Twelweth = 1-9 gen = Camel case
+// Twelweth = 1-9 gen = toggleCase
+twelwthGeneration($DATA, specialCharsArray, popularPhrasesArray);
 
-// Threetennth = 1-9 gen = reverted CamelCase
-
-// Fourteenth = 1-9 gen = First letter big
+// Threetennth = 1-9 gen = reverted toggleCase
+threeteenthGeneration($DATA, specialCharsArray, popularPhrasesArray)
