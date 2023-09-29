@@ -14,22 +14,20 @@ function tenthGeneration(data, specialChars, popularPhrazes){
 
 
     // Extract keys from the 'data' object and convert them to lowercase
-    const keysToLowerCase = (data) => {
-        const lowercaseData = {};
+    
 
-        for( let key in data ){
-            if( data.hasOwnProperty(key)) {
-                let temp = key.toString();
-                let property = temp.toLowerCase();
-                // figure it out later bro
-                lowercaseData.
-            }
-        }
-
-        return lowercaseData;
-    };
-
-    const $data = keysToLowerCase(data);
+    const $data = {
+        keyWord: data.keyWord.toLowerCase(),
+        keyA: data.keyA.toLowerCase(),
+        keyB: data.keyB.toLowerCase(),
+        keyC: data.keyC.toLowerCase(),
+        dob: data.dob,
+        year: data.year,
+        month: data.month,
+        monthString: data.monthString,
+        day: data.day,
+    }
+    
 
 
     // call the functions
