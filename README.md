@@ -1,5 +1,5 @@
 # WordList-creator
-Password list creator, up to ~1.8 milion custom created passwords per run<br>
+Password list creator, up to ~2 milion custom created passwords per run<br>
 Passowrds are generated based of some pre-fixed data and user provided data<br>
 
 User provided data: <br>
