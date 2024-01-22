@@ -14,4 +14,4 @@ Pre-fixed data <br>
   - popularPhrazesArray = "123", "One", "passowrd", "321", "000", "69", "420", "666", "777", "key", "007", "1337", "Password", "one", "I"
 
 All of this data is combined in diffrent ways in order to create medium sized passwordList (Word list)
-You can expect little less than 400,000 results in a txt file saved in folder by name wordLists
+You can expect little less than 1,800,000 results in a txt file saved in folder by name wordLists
